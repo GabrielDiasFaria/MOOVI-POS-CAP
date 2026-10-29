@@ -1,0 +1,28 @@
+{
+  "generationParameters": {
+    "generationDate": "Thu Oct 29 2026 21:04:10 GMT+0000 (Western European Standard Time)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "Local CAP",
+    "metadataFilename": "",
+    "serviceUrl": "http://localhost:4004/odata/v4/catalogo-filmes/",
+    "appName": "zz1filmes",
+    "appTitle": "Filmes",
+    "appDescription": "Filmes",
+    "appNamespace": "br.com.moovi",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.154.0",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.33.0",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "Filmes"
+      }
+    ],
+    "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/zz1filmes/webapp/index.html"
+  }
+}
