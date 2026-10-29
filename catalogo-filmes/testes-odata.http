@@ -1,0 +1,15 @@
+### 1. Buscar todos os filmes (Read)
+GET http://localhost:4004/odata/v4/catalogo-filmes/Filmes
+
+
+### 2. Criar um novo filme (Create)
+POST http://localhost:4004/odata/v4/catalogo-filmes/Filmes
+Content-Type: application/json
+
+{
+  "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+  "diretor": "Peter Jackson",
+  "anoLancamento": "2001",
+  "genero": "Fantasia",
+  "sinopse": "Um jovem hobbit recebe a tarefa de destruir um anel mágico..."
+}
