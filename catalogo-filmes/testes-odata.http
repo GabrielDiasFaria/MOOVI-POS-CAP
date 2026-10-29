@@ -1,8 +1,4 @@
-### 1. Buscar todos os filmes (Read)
-GET http://localhost:4004/odata/v4/catalogo-filmes/Filmes
-
-
-### 2. Criar um novo filme (Create)
+### 1. Criar um novo filme (Create)
 POST http://localhost:4004/odata/v4/catalogo-filmes/Filmes
 Content-Type: application/json
 
@@ -13,3 +9,25 @@ Content-Type: application/json
   "genero": "Fantasia",
   "sinopse": "Um jovem hobbit recebe a tarefa de destruir um anel mágico..."
 }
+
+### 2. Listar todos os filmes (Read)
+GET http://localhost:4004/odata/v4/catalogo-filmes/Filmes
+
+
+### 3. Atualizar um filme (Update)
+# ATENÇÃO: Copie o "ID" gerado no passo 1 ou 2 e cole no lugar de <COLE_O_ID_AQUI>
+PATCH http://localhost:4004/odata/v4/catalogo-filmes/Filmes(<COLE_O_ID_AQUI>)
+Content-Type: application/json
+
+{
+  "anoLancamento": 2002,
+  "sinopse": "Sinopse atualizada via PATCH!"
+}
+
+
+### 4. Buscar apenas um filme específico pelo ID
+GET http://localhost:4004/odata/v4/catalogo-filmes/Filmes(<COLE_O_ID_AQUI>)
+
+
+### 5. Deletar um filme (Delete)
+DELETE http://localhost:4004/odata/v4/catalogo-filmes/Filmes(<COLE_O_ID_AQUI>)
